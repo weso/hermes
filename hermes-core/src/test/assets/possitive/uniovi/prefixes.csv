@@ -1,0 +1,4 @@
+PREFIX LABEL,PREFIX URI
+uniovi,http://www.uniovi.es/schema
+,http://example.org/
+xsd,http://schema.org/
