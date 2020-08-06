@@ -80,18 +80,18 @@ public class HermesTranslator {
 
         // Create Shapes
         for(String shapeFilePath: shapesFilePaths) {
-            BufferedReader br = new BufferedReader(new FileReader(shapeFilePath));
+            FileReader fr = new FileReader(shapeFilePath);
+            BufferedReader br = new BufferedReader(fr);
             String line;
             TripleExpression tripleExpression;
-            ShapeExpression shape = new ShapeExpression(shapeFilePath + ".shex");
+            ShapeExpression shape = new ShapeExpression(shapeFilePath);
             br.readLine();
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
-                System.out.println(values.length);
                 if(values.length==4)
                     tripleExpression = new TripleExpression(values[0], values[1], values[2], values[3]);
                 else
-                    tripleExpression = new TripleExpression(values[0], values[1], values[2], "*");
+                    tripleExpression = new TripleExpression(values[0], values[1], values[2], " ");
                 shape.getExpressions().add(tripleExpression);
             }
             schema.getShapes().add(shape);
