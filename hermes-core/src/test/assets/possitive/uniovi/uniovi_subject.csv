@@ -1,4 +1,0 @@
-PROPERTY LABEL,PROPERTY TYPE,MIN,MAX
-:name,xsd:string,1,1
-uniovi:lecturers,@uniovi:Lecturer,0,
-uniovi:students,@uniovi:Student,0,

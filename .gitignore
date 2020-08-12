@@ -87,3 +87,7 @@ participants0.iml
 participants_i2b.iml
 /.gradle/
 /build/
+
+# Other files
+hermes-core/synthetic_shapes.csv
+*.hprof
