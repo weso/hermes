@@ -1,7 +1,7 @@
 ## Hermes: A ShExCSV to ShExC Translator
 Hermes is developed and maintained by WESO Research Group. Hermes is a Java based library that allows to translate from [Shape Expressions](https://shex.io/) tabular formats like ShExCSV to the [Shape Expressions Compact Syntax](https://shex.io/shex-semantics/index.html#shexc).
 
-This library can be enveloped in to a rest api server and used form other languages but at the moment that feature is not provided within this repository.
+This library can be enveloped in to a rest api server and used form other languages but at the moment that feature is not provided within this repository. In order to see the roadmap of the project you can refeer to [Long Term Roadmap (LTR)](https://github.com/weso/hermes/issues/4) issue.
 
 ### How to use
 Once you have your environment ready you can start using Hermes from your CLI as follows:
