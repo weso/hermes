@@ -28,7 +28,7 @@ The shapes file is a CSV file tht contains all the shapes declarations. It uses 
 |:User|schema:name|xsd:string|1|1|
 |:User|schema:bithday|xsd:date|0|1|
 |:User|schema:gender| [ schema:Male schema:Female ] OR xsd:string|1|1|
-|:User|schema:owns|IRI @:Car|0|-|
+|:User|schema:owns|@:Car|0|-|
 |:Car|schema:plateNumber|xsd:string|1|1|
 |...|...|...|...|...|
 
@@ -44,7 +44,7 @@ PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
   schema:name          xsd:string {1,1} ;
   schema:birthDate     xsd:date {0,1} ;
   schema:gender        [ schema:Male schema:Female ] OR xsd:string {1,1} ;
-  schema:knows         IRI @:User {0,}
+  schema:owns         @:Car {0,}
 }
 
 :Car {
