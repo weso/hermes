@@ -41,14 +41,14 @@ PREFIX schema: <http://schema.org/>
 PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
 
 :User {
-  schema:name          xsd:string  ;
-  schema:birthDate     xsd:date?   ;
-  schema:gender        [ schema:Male schema:Female ] OR xsd:string ;
-  schema:knows         IRI @:User*
+  schema:name          xsd:string {1,1} ;
+  schema:birthDate     xsd:date {0,1} ;
+  schema:gender        [ schema:Male schema:Female ] OR xsd:string {1,1} ;
+  schema:knows         IRI @:User {0,}
 }
 
 :Car {
-  schema:plateNumber   xsd:string  ;
+  schema:plateNumber   xsd:string {1,1} ;
 }
 ```
 
