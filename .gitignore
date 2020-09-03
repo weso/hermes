@@ -91,3 +91,5 @@ participants_i2b.iml
 # Other files
 hermes-core/synthetic_shapes.csv
 *.hprof
+
+*.csv

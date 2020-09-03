@@ -16,9 +16,16 @@ public class ShExCSVSinteticGenerator {
         int max = 3;
 
         FileWriter writer = new FileWriter("synthetic_shapes.csv");
-        for(int i = 0; i < 1000000000; i++) {
+        for(int i = 0; i < 100; i++) {
             writer.write(shapeLabel+i + "," + constraintLabel+i + "," + constraint + "," + min + "," + max + "\n");
         }
         writer.close();
+    }
+
+    @Test
+    public void readTest() throws IOException, TranslationException {
+        HermesTranslator t = new ToShExCHermesTranslator();
+        String result = t.translate("prefixes.csv", "synthetic_shapes.csv");
+        System.out.println(result);
     }
 }
