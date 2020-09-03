@@ -41,7 +41,7 @@ jobs:
           java-version: 12
           architecture: x64
       - name: Run tests
-        run: ./gradlew build
+        run: ./gradlew.bat build
 
   # Test run on linux platform
   macos-test:
