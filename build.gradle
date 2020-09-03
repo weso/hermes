@@ -10,6 +10,16 @@ version '0.1.0'
 sourceCompatibility = 1.8
 
 publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'es.weso'
+            artifactId = 'hermes'
+            version = '0.1.0'
+
+            from components.java
+        }
+    }
+
     repositories {
         maven {
             name = "GitHubPackages"
